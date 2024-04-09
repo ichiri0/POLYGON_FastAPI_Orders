@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "fastapi-orders"
+version = "0.1.0"
+description = ""
+authors = ["Ichiri0 <ivankochettov@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+sqlalchemy = "^2.0.25"
+alembic = "^1.13.1"
+pydantic-settings = "^2.1.0"
+asyncpg = "^0.29.0"
+python-jose = "^3.3.0"
+passlib = "^1.7.4"
+bcrypt = "^4.1.2"
+fastapi = {extras = ["all"], version = "^0.109.1"}
+
+[tool.poetry.group.dev]
+optional = true
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.2.0"
+black = "^24.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
